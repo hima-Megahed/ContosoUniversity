@@ -5,11 +5,11 @@ namespace LevelUpUniversity.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class Subjects : ControllerBase
+    public class SubjectsController : ControllerBase
     {
         private readonly ISubjectsRepository _subjectsRepository;
 
-        public Subjects(ISubjectsRepository subjectsRepository)
+        public SubjectsController(ISubjectsRepository subjectsRepository)
         {
             _subjectsRepository = subjectsRepository;
         }
