@@ -9,7 +9,7 @@ namespace ContosoUniversity.Api.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            return Content("Greetings!!");
+            return Content("Greetings from linux and windows");
         }
     }
 }
