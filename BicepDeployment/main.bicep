@@ -64,7 +64,7 @@ resource CICD_Website 'Microsoft.Web/sites/sourcecontrols@2022-03-01' = {
     repoUrl: 'https://github.com/hima-Megahed/ContosoUniversity'
     branch: 'master'
     gitHubActionConfiguration: {
-      generateWorkflowFile: true
+      generateWorkflowFile: false
       isLinux: false
       codeConfiguration: {
         runtimeStack: 'dotnet'

@@ -5,31 +5,10 @@
     "_generator": {
       "name": "bicep",
       "version": "0.8.9.13224",
-      "templateHash": "2783220629118040573"
+      "templateHash": "10181419586466707229"
     }
   },
   "parameters": {
-    "skuName": {
-      "type": "string",
-      "defaultValue": "F1",
-      "allowedValues": [
-        "F1",
-        "D1",
-        "B1",
-        "B2",
-        "B3",
-        "S1",
-        "S2",
-        "S3",
-        "P1",
-        "P2",
-        "P3",
-        "P4"
-      ],
-      "metadata": {
-        "description": "Application tier you want application to be created on. Default to Free tier"
-      }
-    },
     "sqlAdminLogin": {
       "type": "string",
       "metadata": {
@@ -61,7 +40,8 @@
     "uniqueSiteName": "[format('{0}-{1}', parameters('siteName'), uniqueString(resourceGroup().id))]",
     "websiteName": "[format('website-{0}', variables('uniqueSiteName'))]",
     "sqlServerName": "[format('contoso-sqlserver-{0}', uniqueString(resourceGroup().id))]",
-    "databaseName": "[format('database-{0}', variables('uniqueSiteName'))]"
+    "databaseName": "[format('database-{0}', variables('uniqueSiteName'))]",
+    "skuName": "F1"
   },
   "resources": [
     {
@@ -70,7 +50,7 @@
       "name": "[variables('hostingPlaneName')]",
       "location": "[parameters('location')]",
       "sku": {
-        "name": "[parameters('skuName')]"
+        "name": "[variables('skuName')]"
       }
     },
     {
@@ -119,7 +99,7 @@
         "repoUrl": "https://github.com/hima-Megahed/ContosoUniversity",
         "branch": "master",
         "gitHubActionConfiguration": {
-          "generateWorkflowFile": true,
+          "generateWorkflowFile": false,
           "isLinux": false,
           "codeConfiguration": {
             "runtimeStack": "dotnet",
