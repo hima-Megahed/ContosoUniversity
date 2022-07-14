@@ -49,7 +49,7 @@ resource connectionString 'Microsoft.Web/sites/config@2022-03-01' = {
   name: 'connectionstrings'
   parent: webSite
   properties: {
-    DefaultConnection: {
+    LevelUpUniversityDatabase: {
       type: 'SQLAzure'
       value: 'Data Source=tcp:${sqlServer.properties.fullyQualifiedDomainName},1433;Initial Catalog=${databaseName};User Id=${sqlAdminLogin}@${sqlServer.properties.fullyQualifiedDomainName};Password=${sqlAdminPassword};'
     }
