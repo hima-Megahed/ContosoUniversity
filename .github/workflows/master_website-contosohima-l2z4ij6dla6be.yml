@@ -51,7 +51,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'website-contosohima-l2z4ij6dla6be'
+          app-name: 'website-contosohima-xmgmv4stkrxgy'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A1896749B9C3413AB8DA0BBBDC57F585 }}
           package: .
