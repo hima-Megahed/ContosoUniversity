@@ -1,20 +1,3 @@
-@description('Application tier you want application to be created on. Default to Free tier')
-@allowed([
-  'F1'
-  'D1'
-  'B1'
-  'B2'
-  'B3'
-  'S1'
-  'S2'
-  'S3'
-  'P1'
-  'P2'
-  'P3'
-  'P4'
-])
-param skuName string = 'F1'
-
 @description('Sql admin login')
 param sqlAdminLogin string
 
@@ -33,6 +16,7 @@ var uniqueSiteName = '${siteName}-${uniqueString(resourceGroup().id)}'
 var websiteName = 'website-${uniqueSiteName}'
 var sqlServerName = 'contoso-sqlserver-${uniqueString(resourceGroup().id)}'
 var databaseName = 'database-${uniqueSiteName}'
+var skuName = 'F1'
 
 resource hostingPlane 'Microsoft.Web/serverfarms@2022-03-01' = {
   name: hostingPlaneName
