@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoUniversity.Api", "ContosoUniversity.Api\ContosoUniversity.Api.csproj", "{E99DD02A-6CD6-4FBA-A274-DA3F3E1DBB1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContosoUniversity.Api", "ContosoUniversity.Api\ContosoUniversity.Api.csproj", "{E99DD02A-6CD6-4FBA-A274-DA3F3E1DBB1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoUniversity.Application", "ContosoUniversity.Application\ContosoUniversity.Application.csproj", "{90EC64C7-0DD8-43F9-A42C-AC30C853712A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContosoUniversity.Application", "ContosoUniversity.Application\ContosoUniversity.Application.csproj", "{90EC64C7-0DD8-43F9-A42C-AC30C853712A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoUniversity.Models", "ContosoUniversity.Models\ContosoUniversity.Models.csproj", "{24B0F196-8990-41DA-B808-E55AE150A470}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContosoUniversity.Models", "ContosoUniversity.Models\ContosoUniversity.Models.csproj", "{24B0F196-8990-41DA-B808-E55AE150A470}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoUniversity.Persistence", "ContosoUniversity.Persistence\ContosoUniversity.Persistence.csproj", "{F3C3D486-C939-4DD1-B4D8-D7F9314DF308}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContosoUniversity.Persistence", "ContosoUniversity.Persistence\ContosoUniversity.Persistence.csproj", "{F3C3D486-C939-4DD1-B4D8-D7F9314DF308}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoUniversity.Repositories", "ContosoUniversity.Repositories\ContosoUniversity.Repositories.csproj", "{CF1D4835-8E27-479E-AB05-C8245A3FFF59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContosoUniversity.Repositories", "ContosoUniversity.Repositories\ContosoUniversity.Repositories.csproj", "{CF1D4835-8E27-479E-AB05-C8245A3FFF59}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{076B4625-FBB9-41D9-A132-EA2C8AA8D05F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{CF1D4835-8E27-479E-AB05-C8245A3FFF59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF1D4835-8E27-479E-AB05-C8245A3FFF59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF1D4835-8E27-479E-AB05-C8245A3FFF59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{076B4625-FBB9-41D9-A132-EA2C8AA8D05F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{076B4625-FBB9-41D9-A132-EA2C8AA8D05F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{076B4625-FBB9-41D9-A132-EA2C8AA8D05F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{076B4625-FBB9-41D9-A132-EA2C8AA8D05F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
